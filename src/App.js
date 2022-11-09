@@ -14,7 +14,7 @@ function App() {
     // let data = await axios.get(`https://api.unsplash.com/photos/random?client_id=y6w1_vY4DcqZDJ6HZ6GZLiA5Cm4bJfrh6rTAf8Vy_EA&limit=10`)
     let data = await axios.get(`https://jsonplaceholder.typicode.com/photos?_start=${count}&_limit=10`)
     setList([...list, ...data.data])
-    console.log(data.data)
+    console.log("data",data.data)
   }
 
   useEffect(() => {
